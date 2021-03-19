@@ -1,0 +1,47 @@
+---
+name: Create Release
+on:
+  push:
+    tags:
+      - 'v*'
+jobs:
+  build:
+    name: Create Release
+    runs-on: ubuntu-20.04
+    steps:
+      # CHECKOUT CODE
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ steps.vars.outputs.tag }}
+      # BUILD PDF
+      - name: Build pdf
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y nodejs npm  gconf-service libgbm-dev libasound2 libatk1.0-0 libc6 libcairo2 libcups2 libdbus-1-3 libexpat1 libfontconfig1 libgcc1 libgconf-2-4 libgdk-pixbuf2.0-0 libglib2.0-0 libgtk-3-0 libnspr4 libpango-1.0-0 libpangocairo-1.0-0 libstdc++6 libx11-6 libx11-xcb1 libxcb1 libxcomposite1 libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss1 libxtst6 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget
+          sudo npm install -g puppeteer --unsafe-perm=true --allow-root
+          sudo npm install -g reveal-md
+          reveal-md linux-history.md           --print linux-history.pdf           --print-size 1920x1080
+          reveal-md linux-tech-beginner.md     --print linux-tech-beginner.pdf     --print-size 1920x1080
+          reveal-md linux-tech-intermediary.md --print linux-tech-intermediary.pdf --print-size 1920x1080
+      # CREATE RELEASE
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false
+          prerelease: false
+      # UPLOAD PDF
+      - name: Upload artefact
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            linux-history.pdf
+            linux-tech-beginner.pdf
+            linux-tech-intermediary.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
