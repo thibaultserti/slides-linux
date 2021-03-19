@@ -1,7 +1,7 @@
 ---
 title: Linux intermédiaire
 theme: night
-highlight-theme: github
+highlightTheme: stackoverflow-dark
 width: 1920
 revealOptions:
     transition: 'none'

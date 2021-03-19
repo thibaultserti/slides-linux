@@ -1,7 +1,7 @@
 ---
 title: Linux débutant
 theme: night
-highlight-theme: github
+highlightTheme: stackoverflow-dark
 width: 1920
 revealOptions:
     transition: 'none'
@@ -41,10 +41,27 @@ Thibault Ayanides
 
 ## Le prompt
 
+* <span style="color: red">utilisateur</span><span style="color: yellow">@</span><span style="color: green">nom-de-la-machine</span>:<span style="color: lightblue">~</span><span style="color: purple">$</span>
+* `~` signifie `/home/utilisateur`
+* `$` signifie que l'utilisateur a des droits restreints
+
 ---
 
 ## Quelques commandes pour commencer ...
 
+```console [1-2|3-4|5|6-7]
+$ pwd
+/home/tibo/tmp
+$ ls
+test1 test2 toto/
+$ cd toto/
+$ pwd
+/home/tibo/tmp/toto
+```
+
+* `pwd` permet d'afficher le répertoire courant
+* `ls` permet de lister les fichiers et les répertoires d'un dossier
+* `cd` permet de changer de répertoire
 ---
 
 ## Options courtes, options longues
