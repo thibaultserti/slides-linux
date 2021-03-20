@@ -1,6 +1,6 @@
 # Présentation sur Linux
 
-[![CC BY 4.0][cc-by-shield]][cc-by]
+[![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
 Ces présentations abordent des points de vue techniques (deux présentations, une pour débutant et une intermédiaire) de Linux.
 Une présentation sur l'histoire de Linux et le contexte du logiciel libre est égalemennt disponible (2h)
@@ -29,8 +29,8 @@ Thibault Ayanides
 
 ## Licence
 
-[![CC BY 4.0][cc-by-image]][cc-by]
+[![CC BY-SA 4.0][cc-by-sa-image]][cc-by-sa]
 
-[cc-by]: http://creativecommons.org/licenses/by/4.0/
-[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
-[cc-by-shield]: https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg
+[cc-by-sa]: http://creativecommons.org/licenses/by-sa/4.0/
+[cc-by-sa-image]: https://licensebuttons.net/l/by-sa/4.0/88x31.png
+[cc-by-sa-shield]: https://img.shields.io/badge/License-CC%20BY--SA%204.0-lightgrey.svg
