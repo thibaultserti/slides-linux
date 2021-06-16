@@ -148,6 +148,8 @@ Thibault Ayanides
 
 ## L'histoire d'UNIX
 
+<!-- .slide: data-background="img/history/unix_history.png" -->
+
 ---
 
 ## L'alliance rebelle
@@ -158,6 +160,7 @@ Thibault Ayanides
 - Il commence à écrire les composants d’un nouvel UNIX, libre et qu’il nomme GNU à travers la licence GPL.
 
 <!-- .slide: data-background="img/history/rebellion_logo.png" -->
+
 ---
 
 ## Le carburant du logiciel libre : la licence GPL
