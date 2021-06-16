@@ -157,6 +157,7 @@ Thibault Ayanides
 - Il crée le concept de logiciel libre.
 - Il commence à écrire les composants d’un nouvel UNIX, libre et qu’il nomme GNU à travers la licence GPL.
 
+<!-- .slide: data-background="img/history/rebellion_logo.png" -->
 ---
 
 ## Le carburant du logiciel libre : la licence GPL
