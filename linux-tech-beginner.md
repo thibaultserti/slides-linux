@@ -11,17 +11,7 @@ revealOptions:
   height: 1080
 ---
 
-<style type="text/css">
-  .reveal p {
-    text-align: left;
-  }
-  .reveal ul {
-    display: block;
-  }
-  .reveal ol {
-    display: block;
-  }
-</style>
+<link href="css/style.css" rel="stylesheet">
 
 # Linux débutant
 

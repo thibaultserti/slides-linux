@@ -1,0 +1,82 @@
+.reveal .linux-everywhere h2 {
+  background: url("/img/history/linux_everywhere.png");
+  color: white;
+  height: 150px;
+  font-size: 2.5em;
+  margin-bottom: 50px;
+}
+
+.white > h2, .white > ul, .white > div {
+  color: white;
+}
+
+.raised-white {
+  -webkit-text-stroke: 4px;
+  -webkit-text-stroke-color: white;
+}
+
+.tooltip {
+  text-decoration: none;
+  position: relative;
+}
+
+.tooltip span {
+  display: none;
+
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
+  color: black;
+  background: white;
+}
+
+.tooltip span img {
+  float: left;
+  margin: 0px 8px 8px 0;
+}
+
+.tooltip:hover span {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  width: auto;
+  max-width: 320px;
+  min-height: 128px;
+  border: 1px solid black;
+  margin-top: 12px;
+  margin-left: 32px;
+  overflow: hidden;
+  padding: 8px;
+}
+
+.arrow {
+  stroke: rgb(0, 0, 0);
+  stroke-width: 3;
+  marker-end: url(#markerArrow);
+}
+
+/* necessary */
+.arrow2 {
+  stroke: rgb(0, 0, 0);
+  stroke-width: 5;
+  marker-end: url(#markerArrow2);
+}
+
+.layered {
+  display: grid;
+
+  /* Set horizontal alignment of items in, case they have a different width. */
+  /* justify-items: start | end | center | stretch (default); */
+  justify-items: start;
+
+  /* Set vertical alignment of items, in case they have a different height. */
+  /* align-items: start | end | center | stretch (default); */
+  align-items: start;
+}
+
+.layered > * {
+  grid-column-start: 1;
+  grid-row-start: 1;
+}
