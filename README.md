@@ -1,6 +1,8 @@
 # Présentation sur Linux
 
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
+[![Build](https://github.com/thibaultserti/slides-linux/actions/workflows/release.yml/badge.svg)](https://github.com/thibaultserti/slides-linux/actions/workflows/release.yml)
+![release](https://badgen.net/github/release/thibaultserti/slides-linux)
 
 Ces présentations abordent des points de vue techniques (deux présentations, une pour débutant et une intermédiaire) de Linux.
 Une présentation sur l'histoire de Linux et le contexte du logiciel libre est égalemennt disponible (2h)
