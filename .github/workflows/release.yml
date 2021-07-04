@@ -17,10 +17,11 @@ jobs:
       # BUILD PDF
       - name: Build pdf
         run: |
-          docker run --rm -p 1948:1948  -v $(pwd):/slides webpronl/reveal-md:latest&
-          docker run --rm -t --net=host -v $(pwd):/slides astefanutti/decktape http://localhost:1948/linux-tech-beginner.md     linux-tech-beginner.pdf
-          docker run --rm -t --net=host -v $(pwd):/slides astefanutti/decktape http://localhost:1948/linux-tech-intermediary.md linux-tech-intermediary.pdf
-          docker run --rm -t --net=host -v $(pwd):/slides astefanutti/decktape http://localhost:1948/linux-history.md           linux-history.pdf
+          chmod 777 $(pwd)
+          docker run --rm -p 1948:1948 -d -v $(pwd):/slides webpronl/reveal-md:latest
+          docker run --rm -t --net=host   -v $(pwd):/slides astefanutti/decktape http://localhost:1948/linux-tech-beginner.md     linux-tech-beginner.pdf
+          docker run --rm -t --net=host   -v $(pwd):/slides astefanutti/decktape http://localhost:1948/linux-tech-intermediary.md linux-tech-intermediary.pdf
+          docker run --rm -t --net=host   -v $(pwd):/slides astefanutti/decktape http://localhost:1948/linux-history.md           linux-history.pdf
       # CREATE RELEASE
       - name: Create Release
         id: create_release
