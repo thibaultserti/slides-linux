@@ -510,7 +510,7 @@ Après la guerre John von Neumann définit l’architecture des ordinateurs mode
 - Publie Chrome OS et le navigateur Chrome
 - Soutient les développements de Linux et de multiples logiciels libres (+ hébergement)
 - Édite également des logiciels propriétaires
-- CA de 80Md$, bénéfices de 19Md$ (2016)
+- CA de 80Md de dollars, bénéf de 19Md de dollars (2016)
 
 ---
 
